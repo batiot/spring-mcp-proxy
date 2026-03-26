@@ -15,12 +15,12 @@ The project SHALL be a standard Gradle project using the Kotlin DSL (`build.grad
 
 ### Requirement: Application starts as an HTTP MCP server
 The application SHALL use `spring-ai-starter-mcp-server-webmvc` to expose the MCP protocol over HTTP. Stdio transport SHALL NOT be enabled. The server SHALL expose:
-- `GET /mcp/sse` — SSE stream for server-to-client events
-- `POST /mcp/message` — client-to-server MCP message endpoint
+- `GET /sse` — SSE stream for server-to-client events (Spring AI default)
+- `POST /mcp/message` — client-to-server MCP message endpoint (Spring AI default)
 
 #### Scenario: Server starts and SSE endpoint is reachable
 - **WHEN** the application is started with `./gradlew bootRun`
-- **THEN** a `GET /mcp/sse` request returns a `text/event-stream` response with HTTP 200
+- **THEN** a `GET /sse` request returns a `text/event-stream` response with HTTP 200
 
 #### Scenario: Stdio transport is not activated
 - **WHEN** the application starts

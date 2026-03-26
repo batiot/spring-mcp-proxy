@@ -1,0 +1,18 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring MCP Server",
+      "request": "launch",
+      "mainClass": "com.batiot.springmcpproxy.SpringMcpProxyApplication",
+      "projectName": "spring-mcp-proxy",
+      "vmArgs": "",
+      "args": "",
+      "env": {
+        "MCP_SERVER_API_KEY": "changeme"
+      },
+      "cwd": "${workspaceFolder}"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+!gradle/wrapper/gradle-wrapper.properties
+
+# IntelliJ IDEA — workspace and local files only (run configurations are committed)
+.idea/
+!.idea/runConfigurations/
+
+# Local application overrides — never commit secrets
+src/main/resources/application-local.properties
+
+# OS
+.DS_Store
+Thumbs.db
